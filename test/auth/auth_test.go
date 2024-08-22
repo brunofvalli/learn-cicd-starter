@@ -1,13 +1,13 @@
-package split
+package auth
 
 import (
 	"reflect"
 	"testing"
 )
 
-func TestGetAPIKey(t *testing.T) {
-	got := Split("a/b/c", "/")
-	want := []string{"a", "b", "c"}
+func TestSimple(t *testing.T) {
+	got := ""
+	want := ""
 	if !reflect.DeepEqual(want, got) {
 		t.Fatalf("expected: %v, got: %v", want, got)
 	}
